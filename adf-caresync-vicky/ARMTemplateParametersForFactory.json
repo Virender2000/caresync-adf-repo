@@ -5,8 +5,14 @@
 		"factoryName": {
 			"value": "adf-caresync-vicky"
 		},
+		"ls_AzureDatabricks_properties_typeProperties_existingClusterId": {
+			"value": "1029-045408-81a81qjf"
+		},
 		"ls_adls_properties_typeProperties_url": {
 			"value": "https://caresyncdl.dfs.core.windows.net/"
+		},
+		"ls_keyvault_properties_typeProperties_baseUrl": {
+			"value": "https://caresync-vicky-keyvault.vault.azure.net/"
 		},
 		"ls_postgress_properties_typeProperties_server": {
 			"value": "ep-floral-waterfall-aovqozdh-pooler.c-2.ap-southeast-1.aws.neon.tech"
@@ -17,8 +23,14 @@
 		"ls_postgress_properties_typeProperties_username": {
 			"value": "neondb_owner"
 		},
-		"ls_keyvault_properties_typeProperties_baseUrl": {
-			"value": "https://caresync-vicky-keyvault.vault.azure.net/"
+		"ls_sql_DB_properties_typeProperties_server": {
+			"value": "caresync-vicky-server.database.windows.net"
+		},
+		"ls_sql_DB_properties_typeProperties_database": {
+			"value": "sql-DB-caresync"
+		},
+		"ls_sql_DB_properties_typeProperties_userName": {
+			"value": "vicky"
 		}
 	}
 }

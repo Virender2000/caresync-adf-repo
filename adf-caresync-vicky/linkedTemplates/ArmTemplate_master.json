@@ -7,9 +7,17 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "adf-caresync-vicky"
 		},
+		"ls_AzureDatabricks_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "1029-045408-81a81qjf"
+		},
 		"ls_adls_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://caresyncdl.dfs.core.windows.net/"
+		},
+		"ls_keyvault_properties_typeProperties_baseUrl": {
+			"type": "string",
+			"defaultValue": "https://caresync-vicky-keyvault.vault.azure.net/"
 		},
 		"ls_postgress_properties_typeProperties_server": {
 			"type": "string",
@@ -23,9 +31,17 @@
 			"type": "string",
 			"defaultValue": "neondb_owner"
 		},
-		"ls_keyvault_properties_typeProperties_baseUrl": {
+		"ls_sql_DB_properties_typeProperties_server": {
 			"type": "string",
-			"defaultValue": "https://caresync-vicky-keyvault.vault.azure.net/"
+			"defaultValue": "caresync-vicky-server.database.windows.net"
+		},
+		"ls_sql_DB_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sql-DB-caresync"
+		},
+		"ls_sql_DB_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "vicky"
 		},
 		"containerUri": {
 			"type": "string",
@@ -60,6 +76,9 @@
 					"ls_keyvault_properties_typeProperties_baseUrl": {
 						"value": "[parameters('ls_keyvault_properties_typeProperties_baseUrl')]"
 					},
+					"ls_AzureDatabricks_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('ls_AzureDatabricks_properties_typeProperties_existingClusterId')]"
+					},
 					"ls_postgress_properties_typeProperties_server": {
 						"value": "[parameters('ls_postgress_properties_typeProperties_server')]"
 					},
@@ -68,6 +87,15 @@
 					},
 					"ls_postgress_properties_typeProperties_username": {
 						"value": "[parameters('ls_postgress_properties_typeProperties_username')]"
+					},
+					"ls_sql_DB_properties_typeProperties_server": {
+						"value": "[parameters('ls_sql_DB_properties_typeProperties_server')]"
+					},
+					"ls_sql_DB_properties_typeProperties_database": {
+						"value": "[parameters('ls_sql_DB_properties_typeProperties_database')]"
+					},
+					"ls_sql_DB_properties_typeProperties_userName": {
+						"value": "[parameters('ls_sql_DB_properties_typeProperties_userName')]"
 					}
 				}
 			},
