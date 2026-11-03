@@ -430,7 +430,7 @@
 											"type": "DatasetReference",
 											"parameters": {
 												"folder": {
-													"value": "@activity('read table details').output.firstRow.source_system",
+													"value": "@activity('read table details').output.firstRow.source_path\n",
 													"type": "Expression"
 												},
 												"container": "source"
