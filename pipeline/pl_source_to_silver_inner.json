@@ -80,6 +80,10 @@
 						"table_name": {
 							"value": "@activity('read table details').output.firstRow.source_table_name",
 							"type": "Expression"
+						},
+						"source_file_format": {
+							"value": "@coalesce(activity('read table details').output.firstRow.source_file_format)",
+							"type": "Expression"
 						}
 					}
 				},
